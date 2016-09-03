@@ -1,0 +1,6 @@
+<article class="post"  style="background: no-repeat top right/128px url('{{ .Site.BaseURL }}{{ .Params.logo }}')">
+    {{ partial "article-header" . }}
+    <p>{{ printf "%s" .Params.summary | markdownify }}&hellip;
+    <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Site.Data.l10n.article.read_more }} &raquo;</a>
+    </p>
+</article>

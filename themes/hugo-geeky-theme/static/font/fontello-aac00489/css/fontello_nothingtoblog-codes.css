@@ -1,0 +1,17 @@
+
+.icon-github:before { content: '\e800'; } /* '' */
+.icon-cancel:before { content: '\e801'; } /* '' */
+.icon-cancel-circled2:before { content: '\e802'; } /* '' */
+.icon-cancel-circled:before { content: '\e803'; } /* '' */
+.icon-rss:before { content: '\f09e'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-rss-squared:before { content: '\f143'; } /* '' */
+.icon-stackoverflow:before { content: '\f16c'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-bitbucket:before { content: '\f171'; } /* '' */
+.icon-dribbble:before { content: '\f17d'; } /* '' */
+.icon-behance-squared:before { content: '\f1b5'; } /* '' */
+.icon-gitlab:before { content: '\f296'; } /* '' */
+.icon-linkedin:before { content: '\f31b'; } /* '' */
+.icon-instagram-filled:before { content: '\f31f'; } /* '' */

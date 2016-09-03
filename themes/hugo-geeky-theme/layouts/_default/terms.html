@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+{{ partial "navigation" . }}
+<div class="container clearfix">
+    <main role="main" class="content">
+    <h2>{{ .Title | singularize }} cloud</a>
+    <ul class="tag-cloud">
+    {{ $data := .Data }} {{ range $key, $value := .Data.Terms.Alphabetical }}
+        <li class="size-{{ $value.Count }}">
+            <a href="{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+        </li>
+    {{ end }}
+    </ul>
+    </main>
+    {{ partial "author" . }}
+</div>
+{{ partial "footer" . }}

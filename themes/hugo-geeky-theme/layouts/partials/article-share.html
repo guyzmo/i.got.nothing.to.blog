@@ -1,0 +1,21 @@
+<ul class="share-buttons">
+    <li>{{ .Site.Data.l10n.share.title }}</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="{{ .Site.Data.l10n.share.facebook }}"></a>
+    </li>
+    {{ if isset .Params "tweet" }}
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?via=guyzmo&in_reply_to={{ .Params.tweet }}&related=guyzmo%3AAuthor%20of%20the%20article&text={{ .Title }}&amp;url={{ .Permalink }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="{{ .Site.Data.l10n.share.twitter }}"></a>
+    </li>
+    {{ else }}
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?via=guyzmo&related=guyzmo%3AAuthor%20of%20the%20article&text={{ .Title }}&amp;url={{ .Permalink }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="{{ .Site.Data.l10n.share.twitter }}"></a>
+    </li>
+    {{ end }}
+    <li>
+        <a class="icon-gplus" href="https://plus.google.com/share?url={{ .Permalink }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="{{ .Site.Data.l10n.share.gplus }}"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary=@bernardpratz" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="{{ .Site.Data.l10n.share.linkedin }}"></a>
+    </li>
+</ul>

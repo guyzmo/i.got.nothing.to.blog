@@ -1,0 +1,12 @@
+{{ .Scratch.Add "action" "show" }}
+{{ partial "header" . }}
+<div class="container clearfix">
+    <main role="main" class="content">
+    <h1>Oops… This page is missing!</h1>
+    <p>Or you were actually looking for a 404?</p>
+    <img src="{{ .Site.BaseURL }}/img/404.jpeg">
+    <p>Then, the 404 has found you!</p>
+    </main>
+    {{ partial "author" . }}
+</div>
+{{ partial "footer" . }}
