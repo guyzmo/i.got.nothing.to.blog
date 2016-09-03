@@ -26,7 +26,7 @@
             {{ if gt (len .Params.tags) 0 }}&middot; {{ .Site.Data.l10n.article.tagged_in }}
             [
                 {{ range $i, $v := .Params.tags }}
-                    <a href="{{ $.Site.BaseURL }}tags/{{ $v | urlize }}">{{ $v | lower }}</a>{{ if ne (len $.Params.tags) (add $i 1) }}, {{ end }}
+                    <a href="{{ $.Site.BaseURL }}/tags/{{ $v | urlize }}">{{ $v | lower }}</a>{{ if ne (len $.Params.tags) (add $i 1) }}, {{ end }}
                 {{ end }}
                 ]
             {{ end }}
