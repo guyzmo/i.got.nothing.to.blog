@@ -1,15 +1,15 @@
 <footer class="main-footer">
   <div class="container clearfix">
-        <a class="icon-rss" href="{{ .Site.BaseURL }}post/index.xml" title="RSS"></a>
+        <a class="icon-rss" href="{{ .Site.BaseURL }}/post/index.xml" title="RSS"></a>
         <p>&copy; {{ .Now.Format "2006" }} &middot; {{ .Site.Params.copyright | markdownify }}</p>
   </div>
 </footer>
 <!-- TODO MAKE IT LOCAL! -->
-<script src="{{ .Site.BaseURL }}js/vendor/jquery-1.11.0.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/vendor/highlight-8.8.0.min.js"></script>
+<script src="{{ .Site.BaseURL }}/js/vendor/jquery-1.11.0.min.js"></script>
+<script src="{{ .Site.BaseURL }}/js/vendor/highlight-8.8.0.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<script>window.jQuery || document.write('<script src="{{ .Site.BaseURL }}js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-<script src="{{ .Site.BaseURL }}js/plugins.js"></script>
+<script>window.jQuery || document.write('<script src="{{ .Site.BaseURL }}/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="{{ .Site.BaseURL }}/js/plugins.js"></script>
 <script>
 window.onfocus = function() {
   $('.blink-on').show()

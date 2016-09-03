@@ -1,6 +1,6 @@
 <div class="navigation">
     <div class="path">
-        <a style="float: left" href="{{ .Site.BaseURL }}">/</a>
+        <a style="float: left" href="{{ .Site.BaseURL }}/">/</a>
         {{ if not .IsHome }}
             {{ if .IsPage }}
                 <a href="{{ .Site.BaseURL }}/{{ .Section }}">{{ .Section }}/</a><a href="#">{{ slicestr (.UniqueID) 0 6 }}</a>
@@ -8,9 +8,9 @@
             {{ if .IsNode }}
                 {{ if .Data.Plural }}
                     {{ if eq .Data.Plural "tags" }}
-                        <a href="{{ .Site.BaseURL }}tags">tags/</a>
+                        <a href="{{ .Site.BaseURL }}/tags">tags/</a>
                     {{ else }}
-                        <a href="{{ .Site.BaseURL }}tags">tags/</a><a href="#">{{ .Title | singularize | lower }}/</a>
+                        <a href="{{ .Site.BaseURL }}/tags">tags/</a><a href="#">{{ .Title | singularize | lower }}/</a>
                     {{ end }}
                 {{ else }}
                     <a href="#">{{ .Title | singularize | lower }}/</a>
@@ -63,6 +63,6 @@
             <li><a href="//plus.google.com/+{{.}}" class="icon-gplus" target="_blank" title="Google+"></a></li>
         {{ end }}
 
-        <li><a href="{{ .Site.BaseURL }}post/index.xml" class="icon-rss" target="_blank" title="RSS"></a></li>
+        <li><a href="{{ .Site.BaseURL }}/post/index.xml" class="icon-rss" target="_blank" title="RSS"></a></li>
     </ul>
 </div>
