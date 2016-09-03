@@ -1,0 +1,38 @@
+baseurl = "http://i.got.nothing.to"
+languageCode = "en-us"
+title = "Guyzmo's blog"
+# Define how many pages appear per site
+paginate = 10
+# Enable comments powered by Disqus by entering your disqus shortname
+#disqusShortname = "spf13"
+theme = "hugo-geeky-theme"
+
+[params]
+    site_author = "Guyzmo"
+    site_description = "I got nothing to blog."
+    location = "Earth, Solar System, Milkyway"
+    # All paths are relative to the baseurl. Put your files
+    # somewhere in the static folder.
+    #avatar = "img/profile-image.png"
+    #header_background = "img/desk.jpg"
+    header_title = "I got nothing to blog."
+    copyright = "<a href='https://media.giphy.com/media/Gjnpx6nps0yS4/giphy.gif'>Powered by an hamster in a wheel.</a>"
+
+    # Enable gogle analytics by entering your tracking code
+    #google_analytics = ""
+
+[social]
+    # Add your social network accounts to the profile section on the left
+    # by entering your username. The links to your account will be
+    # create automatically.
+    twitter   = "guyzmo"
+    facebook  = ""
+    linkedin  = "bernardpratz"
+    behance   = ""
+    dribbble  = ""
+    instagram = "pito_and_mallow"
+    github    = "guyzmo"
+    gitlab    = "guyzmo"
+    bitbucket = "guyzmo"
+    stackoverflow = "zmo"
+    gplus     = ""
