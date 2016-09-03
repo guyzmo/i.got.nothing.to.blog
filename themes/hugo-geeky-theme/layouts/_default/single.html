@@ -4,7 +4,7 @@
 <div class="container clearfix">
     <main role="main" class="content">
         <article class="post"
-                 style="background: no-repeat top right/128px url('{{ .Site.BaseURL }}{{ .Params.logo }}')">
+                 style="background: no-repeat top right/128px url('{{ .Site.BaseURL }}/{{ .Params.logo }}')">
             {{ partial "article-header" . }}
             {{ .Content}}
             {{ partial "article-share" . }}
