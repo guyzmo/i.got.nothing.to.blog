@@ -1,0 +1,15 @@
+stages:
+    - test
+    - deploy
+
+test_job:
+    stage: test
+    script:
+        - /usr/bin/hugo check
+
+deploy_job:
+    stage: deploy
+    script:
+        - bash ~/bin/deploy_hugo.sh nothing.to blog prod
+    only:
+        - master
