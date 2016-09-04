@@ -5,7 +5,7 @@ title = "Guyzmo's blog"
 paginate = 10
 # Enable comments powered by Disqus by entering your disqus shortname
 #disqusShortname = "spf13"
-theme = "hugo-geeky-theme"
+theme = "amstrad-theme"
 
 [params]
     site_author = "Guyzmo"
