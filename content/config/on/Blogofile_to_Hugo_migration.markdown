@@ -123,8 +123,14 @@ I've also added a neat feature that enables you to edit the articles on both git
 gitlab, by clicking on the logos on top or bottom of the page ! And when I do tweet about
 an article, you'll be able to reply to that tweet by clicking the link below !
 
+To make my setup complete, I had to be able to publish with a simple `git push` and
+I had that possible thanks to `gitlab` and the external CI runners! I only had to add
+the [`.gitlab-ci.yml`](https://gitlab.com/guyzmo/i.got.nothing.to.blog/blob/master/.gitlab-ci.yml)
+which contains the `hugo -d ~/www/nothing.to` command to deploy the site, ran as `www-data`! 👌
+
 So now, I'm happily blogging again, thanks to that blog propelled by the hamster in
 a wheel!
+
 
 ![](https://media.giphy.com/media/Gjnpx6nps0yS4/giphy.gif)
 
