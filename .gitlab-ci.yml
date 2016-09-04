@@ -10,6 +10,6 @@ test_job:
 deploy_job:
     stage: deploy
     script:
-        - bash ~/bin/deploy_hugo.sh nothing.to blog prod
+        - /usr/bin/sudo -u www-data -H /usr/bin/hugo -d ~/nothing.to/prod/
     only:
         - master
