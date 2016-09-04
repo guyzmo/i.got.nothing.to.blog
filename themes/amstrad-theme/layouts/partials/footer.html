@@ -3,43 +3,48 @@
         <p>&copy; {{ .Now.Format "2006" }} &middot; {{ .Site.Params.copyright | markdownify }}</p>
   </div>
 </footer>
-<!-- TODO MAKE IT LOCAL! -->
 <script src="{{ .Site.BaseURL }}/js/vendor/jquery-1.11.0.min.js"></script>
 <script src="{{ .Site.BaseURL }}/js/vendor/highlight-8.8.0.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 <script>window.jQuery || document.write('<script src="{{ .Site.BaseURL }}/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 <script src="{{ .Site.BaseURL }}/js/plugins.js"></script>
 <script>
-window.onfocus = function() {
-  $('.blink-on').show()
-  $('.blink-off').hide()
-};
+  // highlight js enable
+    hljs.initHighlightingOnLoad();
 
-window.onblur = function() {
-  $('.blink-on').hide()
-  $('.blink-off').show()
-};
-</script>
-<script>
-    var text = $('.title-text').text();
+    $('title-text').display = 'hidden';
 
-    var length = text.length;
-    var timeOut;
-    var character = 0;
+  // show the cursor when in focus
+  window.onfocus = function() {
+    $('.blink-on').show()
+    $('.blink-off').hide()
+  };
 
-    (function typeWriter() {
-        timeOut = setTimeout(function() {
-            character++;
-            var type = text.substring(0, character);
-            $('.title-text').text(type);
-            typeWriter();
+  window.onblur = function() {
+    $('.blink-on').hide()
+    $('.blink-off').show()
+  };
 
-            if (character == length) {
-                clearTimeout(timeOut);
-            }
+  // hide text
+  var text = $('.title-text').text();
 
-        }, 200);
-    }());
+  // blink the cursor
+  var length = text.length;
+  var timeOut;
+  var character = 0;
+
+  (function typeWriter() {
+      timeOut = setTimeout(function() {
+          character++;
+          var type = text.substring(0, character);
+          $('.title-text').text(type);
+          typeWriter();
+
+          if (character == length) {
+              clearTimeout(timeOut);
+          }
+
+      }, 200);
+  }());
 </script>
 
 {{ with .Site.Params.google_analytics }}
