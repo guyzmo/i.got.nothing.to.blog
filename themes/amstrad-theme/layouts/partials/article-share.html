@@ -4,6 +4,9 @@
 </ul>
 {{ end }}
 <ul class="share-buttons">
+    <li>Edit this post on <a href="//gitlab.com/{{.Site.Social.gitlab}}/i.got.nothing.to.blog/edit/master/content/{{ .Source.File.Path }}" class="icon-gitlab" target="_blank" title="Gitlab"></a> or <a href="//github.com/{{.Site.Social.github}}/i.got.nothing.to.blog/edit/master/content/{{ .Source.File.Path }}" class="icon-github" target="_blank" title="Github"></a></li>
+</ul>
+<ul class="share-buttons">
     <li>
         <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="{{ .Site.Data.l10n.share.facebook }}"></a>
     </li>
