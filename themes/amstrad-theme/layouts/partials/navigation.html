@@ -6,8 +6,8 @@
                 <a href="{{ .Site.BaseURL }}/{{ .Section }}">{{ .Section }}/</a><a href="{{ .Permalink }}">{{ slicestr (.UniqueID) 0 6 }}</a>
             {{ end }}
             {{ if .IsNode }}
-                {{ if .Data.Plural }}
-                    {{ if eq .Data.Plural "tags" }}
+                {{ if eq .Data.Plural "tags" }}
+                    {{ if eq .Title "Tags" }}
                         <a href="{{ .Site.BaseURL }}/tags">tags/</a>
                     {{ else }}
                         <a href="{{ .Site.BaseURL }}/tags">tags/</a><a href="#">{{ .Title | singularize | lower }}/</a>

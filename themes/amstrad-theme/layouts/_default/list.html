@@ -1,8 +1,15 @@
 {{ partial "header" . }}
 {{ partial "navigation" . }}
+
+{{ if eq .Title "Blogs" }}
+{{   .Scratch.Add "pages" .Site.Pages }}
+{{ else }}
+{{   .Scratch.Add "pages" .Data.Pages }}
+{{ end }}
+
 <div class="container clearfix">
     <main role="main" class="content">
-        {{ $paginator := .Paginate (where .Site.Pages "Type" "!=" "ignore") }}
+        {{ $paginator := .Paginate (where (.Scratch.Get "pages") "Type" "post") }}
         {{ range $paginator.Pages }}
             {{ .Render "summary" }}
         {{ end }}
