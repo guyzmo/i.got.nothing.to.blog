@@ -10,6 +10,6 @@ test_job:
 deploy_job:
     stage: deploy
     script:
-        - /usr/bin/sudo -u www-data -H /usr/bin/hugo -d ~/nothing.to/prod/
+        - /usr/bin/sudo -u www-data -H /usr/bin/hugo -d ~www-data/nothing.to/prod/
     only:
         - master
