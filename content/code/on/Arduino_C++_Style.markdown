@@ -1,7 +1,7 @@
 ---
 type: post
 categories: code
-tags: [ hack, bootloader, avr ]
+tags: [  c++, arduino, avr, code, syntax ]
 title: "Arduino: C++ Style"
 date: 2014-04-08T13:37:53+02:00
 summary: "Here's a tip that will make C coders yell and cry, but will make C++ coders happy: how to implement C++ stream syntax for Arduino."
@@ -21,27 +21,27 @@ running on the microcontroller:
 
     static uint8_t base=0;
     inline Print &operator <<(Print &obj, unsigned long arg)
-    {  
+    {
         switch (base) {
             case HEX: obj.print(F("0x")); break;
             case BIN: obj.print(F("0b")); break;
         }
         obj.print(arg, (int)base);
         base = 0;
-        return obj; 
+        return obj;
     }
     template<class T>
-    inline Print &operator <<(Print &obj, T arg) {  
-        obj.print(arg); 
-        return obj; 
+    inline Print &operator <<(Print &obj, T arg) {
+        obj.print(arg);
+        return obj;
     }
-    inline unsigned long hex(unsigned long arg) {  
+    inline unsigned long hex(unsigned long arg) {
         base = HEX;
-        return arg; 
+        return arg;
     }
-    inline unsigned long bin(unsigned long arg) {  
+    inline unsigned long bin(unsigned long arg) {
         base = BIN;
-        return arg; 
+        return arg;
     }
 
     #define endl F("\n")
