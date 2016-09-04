@@ -545,12 +545,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 /* <blink>
  * blink animation effect */
 
-.blink-on {
-  vertical-align: top;
+.blink {
   animation-duration: 1s;
   animation-name: blink;
   animation-iteration-count: infinite;
   animation-timing-function: steps(2, start);
+}
+
+.blink-on {
+  vertical-align: top;
 }
 @keyframes blink {
   80% {
@@ -742,7 +745,8 @@ ul.social li a {
 
 .post p {
   line-height: 28px;
-  max-width: 700px;
+  max-width: 850px;
+  text-align: justify;
 }
 
 .post img.logo {
