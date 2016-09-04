@@ -10,6 +10,7 @@ summary: "It's been a long time since I last posted on that blog. Besides the fa
 lang: english
 logo: /img/hugo-logo.png
 header_background: /img/hugo-bg.png
+tweet: 772503516464185344
 ---
 
 It's been a long time since I last posted on that blog. Besides the fact that I've 
