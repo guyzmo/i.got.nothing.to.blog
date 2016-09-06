@@ -11,5 +11,6 @@ deploy_job:
     stage: deploy
     script:
         - /usr/bin/sudo -u www-data -H /usr/bin/hugo -d ~www-data/nothing.to/prod/
+        - /usr/bin/python flush.py ~www-data/nothing.to/prod
     only:
         - master
