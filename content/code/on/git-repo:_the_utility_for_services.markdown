@@ -42,7 +42,7 @@ git clone https://github.com/ford_prefect/foobar.git
 then you watch the code, create a branch:
 
 ``` bash
-git checkout -b `bugfix/nasty_one`
+git checkout -b bugfix/nasty_one
 ```
 
 fix it, update the tests, and install it locally, and then you've got an updated
@@ -161,7 +161,7 @@ many pushes as you have remotes!
 
 # Status of the project
 
-For your first time run, I have written a wizard, that you can lanuch using:
+For your first time run, I have written a wizard, that you can launch using:
 
 ``` bash
 % git-repo config
