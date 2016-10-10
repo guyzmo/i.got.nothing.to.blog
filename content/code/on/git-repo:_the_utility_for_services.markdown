@@ -59,7 +59,7 @@ Nah, you need to:
 * open your browser on github, at the `https://github.com/ford_prefect` page, and 
 * click on the little `fork` button:
 
-![](img/git-fork.jpg)
+![](/img/git-fork.jpg)
 
 Then once the repository added, you have to change the remotes, so yours is the
 origin and the other one the upstream:
@@ -74,7 +74,7 @@ origin and the other one the upstream:
 That being done, you then got to push your branch onto your remote, as a new branch.
 Then, you have to open your browser and *click* on the create pull request button.
 
-![](img/git-pull-request.png)
+![](/img/git-pull-request.png)
 
 And then, only then, the original author will get notified of your change and will
 be able to review your patch, and eventually integrate it.
