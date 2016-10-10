@@ -186,4 +186,4 @@ To know more about the tool, you might want to check a series of screencasts I w
 5. [Wanna gist with me? 📎](https://asciinema.org/a/cpjuxczprkihw3ssa23cummwb)
 6. [⑥ There's more to gist! 📎](https://asciinema.org/a/6t24u8pdx7y7nmwmdb7vfgr5l)
 
-I'd be happy to have some feedback either on twitter or on the [Github issues](https://github.com/guyzmo/git-repo/issues). 
+I'd be happy to have some feedback either [on twitter](https://twitter.com/intent/tweet?in_reply_to=785496102313140226&related=guyzmo:Author%20of%20the%20article) or on the [Github issues](https://github.com/guyzmo/git-repo/issues). 
