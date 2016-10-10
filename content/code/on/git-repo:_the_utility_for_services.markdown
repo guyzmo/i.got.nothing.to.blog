@@ -4,14 +4,14 @@ categories: code
 tags: [ python, code, github, gitlab, bitbucket, git ]
 title: Git-Repo The ultimate utility for managing services
 date: 2016-10-10T16:15:14+02:00
-summary: "There are many online platform offering repository hosting, though they all suck at one thing, it's to integrate nicely in the flow of coding. Some have a GUI tool, others integrate more or less in your editor (or IDE), and that's rarely the ones you're using for your work. After the break, let me show you my take on this, with a little tool I wrote called `git-repo`…"
+summary: "There are many online platforms offering repository hosting, though they all suck at one thing, it's to integrate nicely in the flow of coding. Some have a GUI tool, others integrate more or less in your editor (or IDE), and that's rarely the ones you're using for your work. After the break, let me show you my take on this, with a little tool I wrote called `git-repo`…"
 lang: english
 logo: /img/gitlogo-black.png 
 header_background: /img/gitdark-bg.png 
 tweet: 785496102313140226
 ---
 
-Over the last decade, we've seen many online platform offering repository hosting,
+Over the last decade, we've seen many online platforms offering repository hosting,
 like SourceForge, Savannah, Gitorious, Google Code, Github, Launchpad, Gitlab… And
 a bunch of others I fail to remember. They offer a great service to help developers
 and the FLOSS community to make it easy to find and share code on a project.
@@ -134,7 +134,7 @@ all your gists!
 
 Because everybody can manage their Git repository the way they prefer,
 I decided that git-repo would never ever mingle with the `origin` remote. The
-`origin` branch is a special git convention that can change the behaviour of
+`origin` remote is a special git convention that can change the behaviour of
 other tools, so it's better left in the hand of the user!
 
 Another reason for `git-repo` to not decide what `origin` is, is that the tool
@@ -144,11 +144,11 @@ more sense to have each service have a custom label (`gitlab`, `github`…).
 Then one could consider using `origin` as the base remote for the fork. But I believe
 that would be wrong as well, because in git convention, the `origin` is the remote
 you're working with, and the upstream is most of the time read only. Which is why
-the upstream is kept as the `upstream` branch.
+the upstream is kept as the `upstream` remote.
 
-Finally, git-repo comes with a nice hack: the `all` branch. When you have several
+Finally, git-repo comes with a nice hack: the `all` remote. When you have several
 services configured as a remote for your current repository, they are as well configured
-as a single branch target: the `all` branch. So when you do:
+as a single remote target: the `all` remote. So when you do:
 
 ``` bash
 % git push all master
