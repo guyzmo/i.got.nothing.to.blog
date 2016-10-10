@@ -31,7 +31,7 @@ in your shell!
 Let's say you've discovered a super neat python project you've installed and
 love, that's called `foobar`. You've installed it using `pip` from `pypi`. Then
 you've discovered a bug in that project, and want to fix it. So you do `pip
-info foobar` (or the same with `npm`, `gems`…) to see its repository:
+show foobar` (or the same with `npm`, `gems`…) to see its repository:
 `https://github.com/ford_prefect/foobar.git`.
 
 Then, you check it out, with: 
