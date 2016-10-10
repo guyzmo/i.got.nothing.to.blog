@@ -36,12 +36,12 @@ info foobar` (or the same with `npm`, `gems`…) to see its repository:
 
 Then, you check it out, with: 
 
-``` shell
+``` bash
 git clone https://github.com/ford_prefect/foobar.git
 ```
 then you watch the code, create a branch:
 
-``` shell
+``` bash
 git checkout -b `bugfix/nasty_one`
 ```
 
