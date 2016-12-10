@@ -10,6 +10,7 @@ how simple it was to do my invoices in LaTeX, I have since then built a more gen
 around that. Let's have a look after the break."
 lang: english
 logo: /img/facture.png
+tweet: 807679493661806592
 header_background: /img/stackofpapers.jpeg
 ---
 
