@@ -3,7 +3,16 @@
         <a style="float: left" href="{{ .Site.BaseURL }}/">/</a>
         {{ if not .IsHome }}
             {{ if .IsPage }}
-                <a href="{{ .Site.BaseURL }}/{{ .Section }}">{{ .Section }}/</a><a href="{{ .Permalink }}">{{ slicestr (.UniqueID) 0 6 }}</a>
+                <a href="{{ .Site.BaseURL }}/{{ .Section }}">{{ .Section }}/</a>
+                {{ if .GitInfo }}
+                    {{ with .GitInfo }}
+                        <a href="https://github.com/guyzmo/i.got.nothing.to.blog/commit/{{ .AbbreviatedHash }}">
+                            {{ .AbbreviatedHash }}
+                        </a>
+                    {{ end }}
+                {{ else }}
+                    <a href="{{ .Permalink }}">#{{ slicestr (.UniqueID) 0 6 }}</a>
+                {{ end }}
             {{ end }}
             {{ if .IsNode }}
                 {{ if eq .Data.Plural "tags" }}

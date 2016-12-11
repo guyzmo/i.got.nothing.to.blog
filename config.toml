@@ -6,6 +6,7 @@ paginate = 10
 # Enable comments powered by Disqus by entering your disqus shortname
 #disqusShortname = "spf13"
 theme = "amstrad-theme"
+enableGitInfo = true
 
 [params]
     site_author = "Guyzmo"
