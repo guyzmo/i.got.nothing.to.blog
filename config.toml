@@ -1,4 +1,4 @@
-baseurl = "http://i.got.nothing.to"
+baseurl = "https://i.got.nothing.to"
 languageCode = "en-us"
 title = "Guyzmo's blog"
 # Define how many pages appear per site
@@ -31,7 +31,7 @@ enableGitInfo = true
     linkedin  = "bernardpratz"
     behance   = ""
     dribbble  = ""
-    instagram = "pito_and_mallow"
+    instagram = "rouquinou_le_relou"
     github    = "guyzmo"
     gitlab    = "guyzmo"
     bitbucket = "guyzmo"
