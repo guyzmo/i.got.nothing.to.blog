@@ -84,8 +84,8 @@ ConnectTo = MyLaptop
 #!/bin/sh
 
 ip link set $INTERFACE up
-ip addr add 192.168.254.10/32 dev $INTERFACE
-ip route add 192.168.254.0/24 dev $INTERFACE
+ip addr add 192.168.42.10/32 dev $INTERFACE
+ip route add 192.168.42.0/24 dev $INTERFACE
 
 % cat > /etc/tinc/myprivatenetwork/tinc-down
 #!/bin/sh
